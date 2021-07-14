@@ -1,0 +1,297 @@
+/* ------------
+font: poppins
+ --------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/*--------------
+ common style or utilities
+ ---------------*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  color: #18191F;
+  font-size: 28px;
+}
+
+p {
+  font-size: 16px;
+  color: #6C6C6C;
+}
+
+small {
+  font-size: 18px;
+  color: #000000;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 63px;
+}
+
+/* Top Section Style */
+/*---------------------
+ For my big monitor i have used here width: 2000px 
+ ----------------------*/
+.container {
+  width: 2000px;
+  height: 677px;
+  background-color: #2D25A0;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.top-section {
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-content {
+  color: #FFFFFF;
+
+}
+
+.header-detail {
+  margin-left: 70px;
+  margin-bottom: 80px;
+}
+
+.header-image img {
+  width: 556.01px;
+  height: 438px;
+
+}
+
+.container:hover .header-photo {
+  transform: scale(1) rotate(45deg);
+  transition: transform 2s ease-in-out;
+}
+
+.content-link a {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.btn-link {
+  color: whitesmoke;
+  text-decoration: none;
+  background-color: #E02C6D;
+  padding: 10px 24px;
+
+}
+
+.btn-link i {
+  margin-left: 8px;
+}
+
+/*------------
+ Player Section 
+ -------------*/
+
+
+.famous-palyers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 27px;
+  column-gap: 30px;
+
+}
+
+.player {
+  width: 300px;
+  height: 480px;
+  padding: 15px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player-image img {
+  width: 300px;
+  height: 256px;
+}
+
+/*-------------------
+ Section Copa America 
+ --------------------*/
+.copa-america {
+  display: flex;
+  margin-top: 80px;
+}
+
+.copa-america-content {
+  width: 469px;
+  height: 309px;
+}
+
+.contect-detail {
+  margin-top: -20px;
+  margin-bottom: 40px;
+}
+
+.copa-america-image img {
+  width: 567px;
+  height: 427px;
+  margin-left: 66px;
+}
+
+/*---------------
+ section uro 2020 
+ ----------------*/
+.euro {
+  display: flex;
+  margin-top: 80px;
+}
+
+.euro-content {
+  width: 469px;
+  height: 309px;
+}
+
+.contect-detail {
+  margin-top: -20px;
+  margin-bottom: 40px;
+}
+
+.euro-image img {
+  width: 567px;
+  height: 427px;
+  margin-right: 66px;
+}
+
+/*-------------
+ footer Section 
+ --------------*/
+.image-logo img {
+  width: 483.87px;
+  height: 110px;
+}
+
+.icon {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 32px;
+  color: #969BAB;
+  background-color: lightgoldenrodyellow;
+
+}
+
+.footer-icons {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/*------------
+ Media Quaries 
+ -------------*/
+
+
+/* laptop or small monitor */
+@media only screen and (min-width:992px) and (max-width:2000px) {
+  .container {
+    width: 100%;
+  }
+
+  .famous-palyers {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+/* tablet devices */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+  .container {
+    width: 100%;
+    height: 900px;
+  }
+
+  .famous-palyers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .copa-america,
+  .euro,
+  .container {
+    flex-direction: column;
+  }
+
+  .copa-america {
+    height: 800px;
+  }
+
+  .copa-america-image img {
+    margin-top: 150px;
+    position: relative;
+    margin-left: 0px;
+  }
+
+  .euro {
+    height: 800px;
+    margin-left: 70px;
+    margin-top: 250px;
+  }
+}
+
+/* Mobile Devices */
+
+@media only screen and (max-width:688px) {
+  .container {
+    width: 100%;
+    height: 1200px;
+  }
+
+  .famous-palyers {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .copa-america,
+  .euro,
+  .container {
+    flex-direction: column;
+  }
+
+  .copa-america {
+    height: 800px;
+    margin-left: 100px;
+  }
+
+  .copa-america-image img {
+    margin-top: 150px;
+    position: relative;
+    margin-left: 0px;
+  }
+
+  .euro {
+    height: 800px;
+    margin-left: 160px;
+    margin-top: 250px;
+  }
+
+}
+
